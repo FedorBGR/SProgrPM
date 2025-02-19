@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "SalesForm";
+            dataGridViewSales = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSales).BeginInit();
+            SuspendLayout();
+            // 
+            // dataGridViewSales
+            // 
+            dataGridViewSales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewSales.BackgroundColor = SystemColors.Control;
+            dataGridViewSales.BorderStyle = BorderStyle.None;
+            dataGridViewSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSales.Location = new Point(118, 110);
+            dataGridViewSales.Name = "dataGridViewSales";
+            dataGridViewSales.Size = new Size(582, 211);
+            dataGridViewSales.TabIndex = 0;
+            dataGridViewSales.CellContentClick += dataGridViewSales_CellContentClick;
+            // 
+            // SalesForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dataGridViewSales);
+            Name = "SalesForm";
+            Text = "SalesForm";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSales).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridViewSales;
     }
 }

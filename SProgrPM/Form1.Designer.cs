@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
+            Add_partner_button = new Button();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -41,11 +42,23 @@
             flowLayoutPanel1.TabIndex = 0;
             flowLayoutPanel1.WrapContents = false;
             // 
+            // Add_partner_button
+            // 
+            Add_partner_button.Font = new Font("Segoe UI", 14F);
+            Add_partner_button.Location = new Point(736, 516);
+            Add_partner_button.Name = "Add_partner_button";
+            Add_partner_button.Size = new Size(195, 52);
+            Add_partner_button.TabIndex = 1;
+            Add_partner_button.Text = "Добавить партнера";
+            Add_partner_button.UseVisualStyleBackColor = true;
+            Add_partner_button.Click += Add_partner_button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 661);
+            Controls.Add(Add_partner_button);
             Controls.Add(flowLayoutPanel1);
             Name = "Form1";
             Text = "Form1";
@@ -55,5 +68,6 @@
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
+        private Button Add_partner_button;
     }
 }
